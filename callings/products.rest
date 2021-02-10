@@ -1,0 +1,36 @@
+GET http://localhost:3000/products/
+Content-Type: application/application/json
+
+###
+
+GET http://localhost:3000/products/5fbd329e4f3c00287011976a
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/products/
+Content-Type: application/json
+
+{
+     "brand_name": "Bru",
+     "product_image": "xyz1",
+     "product_name": "filter coffie",
+     "product_size": [
+          {"size": "250gm", "mrp": 70, "price": 60},
+          {"size": "500gm", "mrp": 140," price": 120}
+     ]
+}
+###
+DELETE http://localhost:3000/products/5fbd4139592c1d005830b2c0
+Content-Type: application/json
+
+###
+
+PATCH  http://localhost:3000/products/5fbd329e4f3c00287011976a
+Content-Type:  : application/json
+
+{
+     "product_size" : [
+          { "size" : "300gm"}
+     ]
+}
